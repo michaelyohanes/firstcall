@@ -42,9 +42,22 @@
 
 ### Thumbnails
 - API docs
+  
+![Screenshot 2023-07-13 at 07 15 47](https://github.com/michaelyohanes/firstcall/assets/24835724/ac4f285f-9487-4ab8-b183-4c931749367f)
+
 
 - Home (Dashboard)
+  
+![Screenshot 2023-07-13 at 07 14 41](https://github.com/michaelyohanes/firstcall/assets/24835724/1e5ea1b3-23fc-4778-b6e3-2c35eecf512c)
+
 
 - Add User  
 
+![Screenshot 2023-07-13 at 07 16 53](https://github.com/michaelyohanes/firstcall/assets/24835724/40faa270-7f17-4b52-aff0-c199f962185f)
+
+
 - Edit User
+
+![Screenshot 2023-07-13 at 07 17 42](https://github.com/michaelyohanes/firstcall/assets/24835724/23a6a0f3-3343-4872-ac0b-576b3a1754de)
+
+  
