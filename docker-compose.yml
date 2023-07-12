@@ -1,0 +1,45 @@
+version: '3.8'
+services:
+  db:
+    build:
+      context: ./
+      dockerfile: db.Dockerfile
+    restart: always
+    environment:
+      - PGUSER=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=mypass
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready"]
+      interval: 3s
+      timeout: 5s
+      retries: 5
+    ports:
+        - 5432:5432
+    volumes:
+     - ./db/pgdata:/var/lib/postgresql/data
+
+  api:
+    build:
+      context: ./
+      dockerfile: api.Dockerfile
+    ports:
+      - 3001:3001
+    environment:
+      - NODE_ENV=production
+    depends_on:
+      db:
+        condition: service_healthy
+
+  app:
+    build:
+      context: ./
+      dockerfile: app.Dockerfile
+    ports:
+      - 3000:3000
+    depends_on:
+      db:
+        condition: service_healthy
+
+volumes:
+  pgdata:

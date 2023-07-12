@@ -1,0 +1,10 @@
+$paleblue: #6599cf;
+
+.MuiDataGrid-cellContent {
+    text-transform: capitalize;
+}
+
+.MuiDataGrid-columnHeaders {
+    background: $paleblue;
+    color: white;
+}
